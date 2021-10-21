@@ -1,0 +1,13 @@
+version: '3.7'
+
+services:
+  app:
+    build: .
+    volumes:
+      - .:/app
+    ports:
+      - 3000:3000
+    image: react-image:latest
+    container_name: react-shop
+    command: npm start
+  
